@@ -1,0 +1,95 @@
+/* .App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #09d3ac;
+} */
+
+html, body{
+  padding: 0px;
+  margin: 0px;
+  background-color: #e8e8e8;
+}
+
+
+/* PAGE index */
+#Oval-Copy{
+  width: 86.8vw;
+  height: 86.8vw;
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  background-color: #eb8256;
+  border-radius: 50%;
+}
+
+#Oval{
+  width: 47vw;
+  height: 47vw;
+  position: fixed;
+  right: 0px;
+  bottom: 0px;
+  background-color: #54868c;
+  border-radius: 50%;
+}
+
+#Rectangle{
+  width: 72.7vw;
+  height: 43.1vh;
+  position: fixed;
+  left: 0vw;
+  top: 44.2vh;
+  background-color: #000000;
+}
+
+#Oval_in{
+  width: 28vh;
+  height: 28vh;
+  position: fixed;
+  right: 87.9vw;
+  top: 47.8vh;
+  background-color: #ffffff;
+  border-radius: 50%;
+}
+
+#scanner{
+  width: 28vh;
+  height: 28vh;
+  position: fixed;
+  left: 32.3vw;
+  top: 48.6vh;
+  border: solid 5px #aaaaaa;
+}
+
+#IPATH{
+  width: 43.8vw;
+  height: 5vh;
+  font-family: SFProDisplay;
+  font-size: 35pt;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.57;
+  letter-spacing: 5px;
+  text-align: right;
+  color: #fafafa;
+  position: fixed;
+  left: 28.6vw;
+  top: 31.9vh;
+}
