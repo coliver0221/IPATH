@@ -1,14 +1,3 @@
-* {
-  padding: 0px;
-  margin: 0px;
-}
-
-html, body{
-  padding: 0px;
-  margin: 0px;
-  background-color: #e8e8e8;
-}
-
 /* PAGE index */
 #Oval-Copy{
   width: 86.8vw;
@@ -30,15 +19,6 @@ html, body{
   border-radius: 50%;
 }
 
-#Rectangle{
-  width: 72.7vw;
-  height: 43.1vh;
-  position: fixed;
-  left: 0vw;
-  top: 44.2vh;
-  background-color: #000000;
-}
-
 #Oval_in{
   width: 28vh;
   height: 28vh;
@@ -47,15 +27,6 @@ html, body{
   top: 47.8vh;
   background-color: #ffffff;
   border-radius: 50%;
-}
-
-#scanner{
-  width: 28vh;
-  height: 28vh;
-  position: fixed;
-  left: 32.3vw;
-  top: 48.6vh;
-  border: solid 5px #aaaaaa;
 }
 
 #IPATH{
