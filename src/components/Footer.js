@@ -1,24 +1,61 @@
 import React from 'react';
 import '../App.css';
+import { Link } from 'react-router-dom';
 
-import imgShopOri from '../img/icons8-shop-50.png';
-import imgEventOri from '../img/icons8-event-select-50.png';
+import imgEvent from '../img/icons8-event-select-50.png';
+import imgEventWhite from '../img/icons8-event-select-50-2.png';
+import imgShop from '../img/icons8-shop-50.png';
+import imgShopWhite from '../img/icons8-shop-50-2.png';
 
-function Footer () {
+function Footer (props) {
+    const blackStyle = {
+        color: 'black'
+    }
+    const whiteStyle = {
+        color: 'white'
+    }
+
+    var profileIcon = imgEvent;
+    var eventIcon = imgEvent;
+    var shopIcon = imgShop;
+    var profileStyle = blackStyle;
+    var eventStyle = blackStyle;
+    var shopStyle = blackStyle;
+
+    if (props.currPage === "profile") {
+        console.log("currPage: profile");
+        // profileIcon = ;
+        profileStyle = whiteStyle;
+    } else if (props.currPage === "event") {
+        console.log("currPage: event");
+        eventIcon = imgEventWhite;
+        eventStyle = whiteStyle;
+    } else if (props.currPage === "shop") {
+        console.log("currPage: shop");
+        shopIcon = imgShopWhite;
+        shopStyle = whiteStyle;
+    }
+
     return(
         <div className='footer'>
-            <div className='footer-item-block'>
-                <img src={imgEventOri} alt="Profile" />
-                <p>個人頁面</p>
-            </div>
-            <div className='footer-item-block'>
-                <img src={imgEventOri} alt="Event" />
-                <p>活動選擇</p>
-            </div>
-            <div className='footer-item-block'>
-                <img src={imgShopOri} alt="Shop" />
-                <p>商品兌換</p>
-            </div>
+            <Link to='/profile'>
+                <div className='footer-item-block'>
+                    <img src={profileIcon} alt="Profile" />
+                    <p style={profileStyle}>個人頁面</p>
+                </div>
+            </Link>
+            <Link to='/event'>
+                <div className='footer-item-block'>
+                    <img src={eventIcon} alt="Event" />
+                    <p style={eventStyle}>活動選擇</p>
+                </div>
+            </Link>
+            <Link to='/shop'>
+                <div className='footer-item-block'>
+                    <img src={shopIcon} alt="Shop" />
+                    <p style={shopStyle}>商品兌換</p>
+                </div>
+            </Link>
         </div>
     );
 }
