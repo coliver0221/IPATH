@@ -76,13 +76,13 @@ html, body{
 }
 /** PAGE **/
 /* PAGE index */
-#login{
+.login{
   width: 100%;
   height: 100%;
   background-color: #e8e8e8;
 }
 
-#Oval-Copy{
+.Oval-Copy{
   width: 86.8vw;
   height: 86.8vw;
   position: fixed;
@@ -92,7 +92,36 @@ html, body{
   border-radius: 50%;
 }
 
-#Oval{
+.Oval-Copy p{
+  color: #ffffff;
+}
+
+.Oval-Copy .title{
+  line-height: 1.5;
+  position: absolute;
+  left: 28vw;
+  top: 32vh;
+  color: #fafafa;
+}
+
+.Oval-Copy .CH-Title{
+  font-size: 35px;
+}
+
+.Oval-Copy .EN-Title{
+  font-size: 20px;
+}
+
+.Oval-Copy .desh{
+  width: 52px;
+  height: 8px;
+  background-color: #033793;
+  position: absolute;
+  left: 74.5vw;
+  top: 34.5vh;
+}
+
+.Oval{
   width: 47vw;
   height: 47vw;
   position: fixed;
@@ -102,7 +131,7 @@ html, body{
   border-radius: 50%;
 }
 
-#Rectangle{
+.Rectangle{
   width: 72.7vw;
   height: 43.1vh;
   position: fixed;
@@ -111,7 +140,7 @@ html, body{
   background-color: #000000;
 }
 
-#Oval_in{
+.Oval_in{
   width: 28vh;
   height: 28vh;
   position: fixed;
@@ -121,13 +150,21 @@ html, body{
   border-radius: 50%;
 }
 
-#scanner{
+.scanner{
   width: 28vh;
   height: 28vh;
   position: fixed;
-  left: 32.3vw;
+  left: 32vw;
   top: 48.6vh;
   border: solid 5px #aaaaaa;
+}
+
+.scanHint{
+  font-size: 24px;
+  color: #cfcfcf;
+  position: absolute;
+  left: 36vw;
+  bottom: 17vh;
 }
 
 #IPATH{

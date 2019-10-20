@@ -3,12 +3,19 @@ import './App.css';
 
 function App() {
   return (
-    <div id="login">
-      <div id="Oval-Copy"></div>
-      <div id="Oval"></div>
-      <div id="Rectangle"></div>
-      <div id="Oval_in"></div>
-      <video id="scanner"></video>
+    <div className="login">
+      <div className="Oval-Copy">
+        <div className="title">
+          <p className="CH-Title">IPATH 學生點數系統</p>
+          <p className="EN-Title">IPATH Student Point System</p>
+        </div>
+        <div className="desh"></div>
+      </div>
+      <div className="Oval"></div>
+      <div className="Rectangle"></div>
+      <div className="Oval_in"></div>
+      <video className="scanner"></video>
+      <p className="scanHint">請掃描登入使用者身分</p>
     </div>
   );
 }
