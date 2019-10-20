@@ -1,9 +1,13 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
 html, body{
   padding: 0px;
   margin: 0px;
   background-color: #e8e8e8;
 }
-
 
 /* PAGE index */
 #Oval-Copy{
@@ -69,4 +73,21 @@ html, body{
   position: fixed;
   left: 28.6vw;
   top: 31.9vh;
+}
+
+.footer{
+  width: 100%;
+  height: 10.5vh;
+  background-color: #54868c;
+  position: fixed;
+  bottom: 0px;
+  text-align: center;
+}
+
+.footer-item-block {
+  width: 30%;
+  height: 10vw;
+  display: inline-block;
+  position: relative;
+  top: 18.5%;
 }
