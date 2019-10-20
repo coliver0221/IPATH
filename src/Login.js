@@ -44,7 +44,7 @@ const QRScanner = styled(QrReader)`
   border: solid 3px #aaaaaa;
 `;
 
-function App() {
+function Login() {
   const [result, setResult] = useState(null);
   const onScan = data => {
     if (data) {
@@ -77,4 +77,4 @@ function App() {
   );
 }
 
-export default App;
+export default Login;
