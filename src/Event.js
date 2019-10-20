@@ -4,14 +4,14 @@ import './App.css';
 import Nav from './components/Nav';
 import Footer from './components/Footer';
 
-function Profile() {
+function Event() {
     return (
         <dev>
             <Nav />
-            <h1>Profile Page</h1>
-            <Footer currPage={"profile"} />
+            <h1>Event Page</h1>
+            <Footer currPage={"event"} />
         </dev>
     );
 }
 
-export default Profile;
+export default Event;

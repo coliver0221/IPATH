@@ -4,14 +4,14 @@ import './App.css';
 import Nav from './components/Nav';
 import Footer from './components/Footer';
 
-function Profile() {
+function Shop() {
     return (
         <dev>
             <Nav />
-            <h1>Profile Page</h1>
-            <Footer currPage={"profile"} />
+            <h1>Shop Page</h1>
+            <Footer currPage={"shop"} />
         </dev>
     );
 }
 
-export default Profile;
+export default Shop;
