@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import styled from "styled-components";
 import QrReader from "react-qr-reader";
+import { withRouter } from "react-router-dom";
 
 const Rectangle = styled.div`
   position: fixed;
@@ -43,19 +44,23 @@ const QRScanner = styled(QrReader)`
   border: solid 3px #aaaaaa;
 `;
 
-function Login() {
+function Login(props) {
   const [result, setResult] = useState(null);
   const onScan = data => {
     if (data) {
       setResult(data);
       alert(`我掃到的資料是：${data}`);
+      props.history.push("/profile");
     }
   };
+
+  console.log(props);
+
   return (
     <div className="login">
-      <p>
+      {/* <p>
         <bold>{result}</bold>
-      </p>
+      </p> */}
       <div className="Oval-Copy">
         <div className="title">
           <p className="CH-Title">IPATH 學生點數系統</p>
@@ -81,4 +86,5 @@ function Login() {
   );
 }
 
-export default Login;
+// export default Login;
+export default withRouter(Login);
