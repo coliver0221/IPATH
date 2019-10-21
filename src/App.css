@@ -228,6 +228,10 @@ html, body{
   bottom: 10.5vh;
 }
 
+.bottomBody .userPoint{
+  margin-top: 6vh;
+}
+
 .bottomBody p{
   font-size: 26px;
   color: #4a4a4a;
