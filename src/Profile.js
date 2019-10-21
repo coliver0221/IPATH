@@ -22,11 +22,11 @@ function Profile() {
             </div>
             <div className="bottomBody">
                 <div className="userPoint">
-                    <div class="dot"></div>
+                    <div className="dot"></div>
                     <p>目前持有 </p>
                     <p className="point">{testing_point}</p>
                     <p> 點</p>
-                    <div class="dot"></div>
+                    <div className="dot"></div>
                 </div>
             </div>
             <Footer currPage={"profile"} />
