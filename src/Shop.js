@@ -7,7 +7,7 @@ import Footer from './components/Footer';
 function Shop() {
     return (
         <dev>
-            <Nav />
+            <Nav title={"IPATH 學生點數系統"}/>
             <h1>Shop Page</h1>
             <Footer currPage={"shop"} />
         </dev>

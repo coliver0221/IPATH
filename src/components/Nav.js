@@ -5,7 +5,7 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 function Nav (props) {
     return(
         <div className='Nav'>
-            <h1>{props.title}</h1>
+            <p>{props.title}</p>
         </div>
     );
 }
