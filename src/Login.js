@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import styled from "styled-components";
 import QrReader from "react-qr-reader";
-import "./App.css";
 
 const Rectangle = styled.div`
   position: fixed;
@@ -34,7 +33,7 @@ const Rectangle = styled.div`
     text-align: center;
     margin-top: 10px;
     color: #cfcfcf;
-    font-size: 20px;
+    font-size: 24px;
   }
 `;
 
@@ -53,26 +52,31 @@ function Login() {
     }
   };
   return (
-    <div className="App">
-      <p><bold>{result}</bold></p>
-      <div id="container">
-        <div id="Oval-Copy"></div>
-        <div id="Oval"></div>
-        <div id="Oval_in"></div>
-        <Rectangle>
-          <div className="circle" />
-          <div className="qr-wrapper">
-            <QRScanner
-              delay={300}
-              onError={err => alert(err)}
-              onScan={onScan}
-              showViewFinder={false}
-              facingMode="environment"
-            />
-            <p className="qr-text">請掃描登入使用者身份</p>
-          </div>
-        </Rectangle>
+    <div className="login">
+      <p>
+        <bold>{result}</bold>
+      </p>
+      <div className="Oval-Copy">
+        <div className="title">
+          <p className="CH-Title">IPATH 學生點數系統</p>
+          <p className="EN-Title">IPATH Student Point System</p>
+        </div>
+        <div className="desh"></div>
       </div>
+      <div className="Oval"></div>
+      <Rectangle>
+        <div className="circle" />
+        <div className="qr-wrapper">
+          <QRScanner
+            delay={300}
+            onError={err => alert(err)}
+            onScan={onScan}
+            showViewFinder={false}
+            facingMode="environment"
+          />
+          <p className="qr-text">請掃描登入使用者身份</p>
+        </div>
+      </Rectangle>
     </div>
   );
 }
