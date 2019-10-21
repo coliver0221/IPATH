@@ -71,41 +71,6 @@
   border-radius: 50%;
 }
 
-.Rectangle{
-  width: 72.7vw;
-  height: 43.1vh;
-  position: fixed;
-  left: 0vw;
-  top: 44.2vh;
-  background-color: #000000;
-}
-
-.Oval_in{
-  width: 28vh;
-  height: 28vh;
-  position: fixed;
-  right: 87.9vw;
-  top: 47.8vh;
-  background-color: #ffffff;
-  border-radius: 50%;
-}
-
-.scanner{
-  width: 28vh;
-  height: 28vh;
-  position: fixed;
-  left: 32vw;
-  top: 48.6vh;
-  border: solid 5px #aaaaaa;
-}
-
-.scanHint{
-  font-size: 24px;
-  color: #cfcfcf;
-  position: absolute;
-  left: 36vw;
-  bottom: 17vh;
-}
 
 #IPATH{
   width: 43.8vw;

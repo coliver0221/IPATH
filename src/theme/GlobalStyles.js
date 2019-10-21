@@ -13,6 +13,11 @@ export default createGlobalStyle`
   'Segoe UI Emoji', 'Segoe UI Symbol';
   }
 
+  html, body {
+    width: 100vw;
+    height: 100vh;
+  }
+
   p {
     padding: 0;
     margin: 0;
