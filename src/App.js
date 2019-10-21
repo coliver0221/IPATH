@@ -6,6 +6,8 @@ import Login from './Login';
 import Profile from './Profile';
 import Shop from './Shop';
 import Event from './Event';
+import ResetStyles from './theme/ResetStyles';
+import GlobalStyles from './theme/GlobalStyles';
 
 function App() {
   return (
@@ -18,6 +20,8 @@ function App() {
           <Route path='/event' component={Event} />
         </Switch>
       </div>
+      <ResetStyles />
+      <GlobalStyles />
     </Router>
   );
 }
