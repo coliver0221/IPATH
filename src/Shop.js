@@ -1,10 +1,15 @@
 import React, {useState} from 'react';
 import './App.css';
 import styled from "styled-components";
+import { withRouter } from "react-router-dom";
 
 import Nav from './components/Nav';
 import Footer from './components/Footer';
+import FooterExit from './components/FooterExit';
 
+import checkIncon from './img/check.png';
+
+// SHOP PAGE
 const UserInfo = styled.div`
     width: 100%;
     height: 14vh;
@@ -109,6 +114,7 @@ const ItemBlockRight = styled.div`
     }
 `;
 
+// CONFIRM PAGE
 const ConfirmBody = styled.div`
     width: 100%;
     height: 66.5vh;
@@ -143,6 +149,102 @@ const Cost = styled.div`
     p {
         display: inline-block;
         letter-spacing: 2px;
+    }
+
+    .point {
+        color: #0c5ebe;
+    }
+`;
+
+const Btn = styled.div`
+    position: absolute;
+    bottom: 20vh;
+    left: 10vw;
+`;
+
+const CencelBtn = styled.button`
+    width: 38vw;
+    height: 7.5vh;
+    font-size: 27px;
+    letter-spacing: 3.2px;
+    color: #ffffff;
+    display: inline-block;
+    border: soild 2px transparent;
+    box-sizing:border-box;
+    border-radius: 38.5px;
+    background-color: #939393;
+    margin-left: 2vw;
+`;
+
+const ConfirmBtn = styled.button`
+    width: 38vw;
+    height: 7.5vh;
+    font-size: 27px;
+    letter-spacing: 3.2px;
+    color: #ffffff;
+    display: inline-block;
+    border: soild 2px transparent;
+    box-sizing:border-box;
+    border-radius: 38.5px;
+    background-color: #033793;
+    margin-left: 2vw;
+`;
+
+// SUCCESS PAGE
+const SuccessBody = styled.div`
+    width: 100%;
+    height: 66.5vh;
+    background-color: #ffffff;
+    text-align: center;
+    position: relative;
+    padding-top: 13vh;
+`;
+
+const SuccessIcon = styled.div`
+    padding-bottom: 9vh;
+
+    .rectangle {
+        width: 53vw;
+        height: 20.5vh;
+        border-radius: 29px;
+        border: solid 3px #033793;
+        padding-top: 3vh;
+        display: inline-block;
+    
+        .complete {
+            font-size: 60px;
+            color: #033793;
+            letter-spacing: 1.5px;
+            padding-bottom: 3vh;
+        }
+
+        .hint {
+            font-size: 26px;
+            color: #4a4a4a;
+        }
+    }
+`;
+
+const Circle = styled.img`
+    width: 13vw;
+    height: 13vw;
+`;
+
+const RemainedPoint = styled.div`
+    p {
+        font-size: 26px;
+        color: #4a4a4a;
+        display: inline-block;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
+    .dot {
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        background-color: #0c5ebe;
+        display: inline-block;
     }
 
     .point {
@@ -203,6 +305,10 @@ function Shop() {
                         <p className="point">{cost}</p>
                         <p> 點</p>
                     </Cost>
+                    <Btn>
+                        <CencelBtn onClick={() => {setPage("shop"); setItem(null); setCost(0)}}>取消兌換</CencelBtn>
+                        <ConfirmBtn onClick={() => {setPage("success");}}>確認兌換</ConfirmBtn>
+                    </Btn>
                     
                 </ConfirmBody>
                 <Footer currPage={"shop"} />
@@ -211,7 +317,25 @@ function Shop() {
     } else if (page === "success") {
         return (
             <div>
-                
+                <Nav title={"IPATH 學生點數系統"}/>
+                <SuccessBody>
+                    <SuccessIcon>
+                        <Circle src={checkIncon} alt="circle" style={{transform: 'translateX(5vw)'}}/>
+                        <div className="rectangle">
+                            <p className="complete">完成兌換</p>
+                            <p className="hint">記得領取您的商品</p>
+                        </div>
+                        <Circle src={checkIncon} alt="circle" style={{transform: 'translateX(-5vw)'}}/>
+                    </SuccessIcon>
+                    <RemainedPoint>
+                        <div className="dot"></div>
+                        <p>剩餘點數 </p>
+                        <p className="point">{testing_point}</p>
+                        <p> 點</p>
+                        <div className="dot"></div>
+                    </RemainedPoint>
+                </SuccessBody>
+                <FooterExit />
             </div>
         );
     }

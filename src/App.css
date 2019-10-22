@@ -204,3 +204,7 @@
   position: relative;
   top: 18.5%;
 }
+
+.footer-item-block p {
+  font-size: 19px;
+}
