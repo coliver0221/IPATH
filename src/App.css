@@ -195,6 +195,7 @@
   position: fixed;
   bottom: 0px;
   text-align: center;
+  padding-top: 3vh;
 }
 
 .footer-item-block {
@@ -202,7 +203,11 @@
   height: 10vw;
   display: inline-block;
   position: relative;
-  top: 18.5%;
+}
+
+.footer-item-block img {
+  width: 4vw;
+  height: 4vw;
 }
 
 .footer-item-block p {

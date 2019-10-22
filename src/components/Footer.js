@@ -6,6 +6,8 @@ import imgEvent from '../img/icons8-event-select-50.png';
 import imgEventWhite from '../img/icons8-event-select-50-2.png';
 import imgShop from '../img/icons8-shop-50.png';
 import imgShopWhite from '../img/icons8-shop-50-2.png';
+import imgProfile from '../img/icons8-profile-50.png';
+import imgProfileWhite from '../img/icons8-profile-50-2.png';
 
 function Footer (props) {
     const blackStyle = {
@@ -15,7 +17,7 @@ function Footer (props) {
         color: 'white'
     }
 
-    var profileIcon = imgEvent;
+    var profileIcon = imgProfile;
     var eventIcon = imgEvent;
     var shopIcon = imgShop;
     var profileStyle = blackStyle;
@@ -24,7 +26,7 @@ function Footer (props) {
 
     if (props.currPage === "profile") {
         console.log("currPage: profile");
-        // profileIcon = ;
+        profileIcon = imgProfileWhite;
         profileStyle = whiteStyle;
     } else if (props.currPage === "event") {
         console.log("currPage: event");
