@@ -157,36 +157,7 @@
   display: inline-block;
 }
 
-/* EVENT PAGE */
-.event .innerBoby{
-  height: 54.5vh;
-  background-color: #e8e8e8;
-  text-align: center;
-  position: relative;
-}
-
-.event .innerBoby .innerTitle{
-  width: 100%;
-  font-size: 27px;
-  position: absolute;
-  top: 5vh;
-}
-
 /** COMPONENT **/
-/* Nav */
-.Nav{
-  width: 100vw;
-  height: 23vh;
-  text-align: center;
-  background-color: #ffffff;
-}
-
-.Nav p{
-  position: relative;
-  top: 50%;
-  font-size: 35px;
-}
-
 /* footer */
 .footer{
   width: 100vw;
@@ -203,6 +174,7 @@
   height: 10vw;
   display: inline-block;
   position: relative;
+  cursor: pointer;
 }
 
 .footer-item-block img {
