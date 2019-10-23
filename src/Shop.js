@@ -1,7 +1,6 @@
 import React, {useState} from 'react';
 import './App.css';
 import styled from "styled-components";
-import { withRouter } from "react-router-dom";
 
 import Nav from './components/Nav';
 import Footer from './components/Footer';
